@@ -1,5 +1,7 @@
+/*Backendless: https://backendless.com/docs/js/doc.html#welcome*/
+
+Backendless.initApp("3DCEF922-7E9F-7195-FF0F-9D3ECB207C00","F13A43EA-ED3B-2C2A-FF44-80306BEA1A00"); //AppID then JS API key
 document.addEventListener("deviceready", onDeviceReady, false);
-//NEED TO ADD BACKENDLESS KEYS
 
 
 function updateDisplay() {

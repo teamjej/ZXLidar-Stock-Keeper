@@ -5,15 +5,14 @@ document.addEventListener("deviceready", onDeviceReady, false);
 
 
 function updateDisplay() {
-	$("#launched").text("Application launched: " + launched_count);
+	
 }
 
 
 // device APIs are available
     function onDeviceReady() {
 	
-	updateDisplay();  
-	alert("device ready");
+	console.log("device ready!");
     
         /*Login Page */
      $( "#loginButton" ).click(function() {
@@ -77,3 +76,10 @@ function updateDisplay() {
         });
         
     }
+
+    function gotError( err ) // see more on error handling
+    {
+        console.log( "error message - " + err.message );
+        console.log( "error code - " + err.statusCode );
+    }
+

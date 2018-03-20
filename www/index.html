@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- to make it fit mobile screen size -->
+	<meta charset="UTF-8">
+	<title>NFC-Stock Mangement</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel = "stylesheet" href = "loginCSS.css" type = "text/css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/index.js"></script> 
+</head>
+    
+<body>
+
+<div data-role="page" id="pageone" class = "BG">
+        
+  	<div role="main" class="ui-content">
+        
+        <h1>NFC Stock Management</h1>
+        
+<!--Login Form -->
+        <div class ="loginForm">
+             <input class ="loginField" type="text" id="email" placeholder="Email"/>
+             <input type="password" id="password" placeholder="Password"/> <br>
+             <button class="loginButton" id="submit" type="submit">Login</button>
+        </div>
+             
+    </div>
+        <div data-role="footer" data-position="fixed"> <a href="#regPage">Register</a> <a href="#forgpassPage">Forgot Password</a></div>
+</div>
+
+<!--Registration Page -->
+<div data-role="page" id="regPage" class = "">
+    <div role="main" class="ui-content">
+        <h1 class="header">Sign up!</h1>
+        <input class ="loginField" type="text" id="emailReg" placeholder="Email"/>
+        <input class ="loginField" type="text" id="nameReg" placeholder ="Full Name" />
+        <input class ="loginField" type="password" id="passwordReg" placeholder ="Password" />
+        <button id="register" class="">Confirm</button> <!-- need notification for account created / confirmation message? -->
+    </div>
+</div>
+
+<!--Forgot-password Page -->
+<div data-role="page" id="forgpassPage" class = "">
+    <div role="main" class="ui-content">
+        <h1 class="header">Forgot Password?</h1>
+        <input class ="loginField" type="text" id="emailPass" placeholder="Email"/>
+        <button href="#loginPage" id="ForgpassBut" class="">Confirm</button> <!-- Send email with password? Look at backendless help for it -->
+    </div>
+</div>
+    
+</body>
+</html>

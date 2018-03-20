@@ -7,7 +7,7 @@ ID is seen by phone - same name might cause issue-->
         id        = "mob.app.dev.storage"
         version   = "1.0.0">
 
-    <name>Motorbike-Event V0.1</name>
+    <name>NFC Management</name>
 
     <description>
         Motorbike eventr application for users to keep track of events.
